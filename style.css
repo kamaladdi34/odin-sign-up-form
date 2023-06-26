@@ -80,6 +80,7 @@ main >*{
     background-color: #466443;
     margin-top: 20px;
     cursor: pointer;
+    transition: 0.1s;
 }
 .sign-in-msg{
     padding-top: 15px;
@@ -97,4 +98,7 @@ main >*{
 }
 .sign-up-form > .form > form > input:hover{
     outline: 2px solid rgba(102, 130, 102, 0.121);
+}
+.sign-up-form > .form > form > button:hover{
+    background-color: #60825d;
 }
