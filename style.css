@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    min-height: 100svh;
+}
+main{
+    display: flex;
+    height: 100svh;
+    align-content: stretch;
+}
+main >*{
+    flex-basis: 0px;
+    flex-grow: 1;
+}
+.side-image{
+    overflow: hidden;
+}
+.side-image img{
+    max-height: 100%;
+}
