@@ -92,12 +92,29 @@ main >*{
     font-weight: bold;
     color: #618a5d;
 }
-.sign-up-form > .form > form > input::placeholder{
-    font-weight: 500;
-    color: #9fb0ac;
-}
-.sign-up-form > .form > form > input:hover{
+.sign-up-form > .form > form > input:hover, .sign-up-form > .form > form > input:focus{
     outline: 2px solid rgba(102, 130, 102, 0.121);
+}
+
+.sign-up-form > .form > form > input:invalid:not(:focus):not(:placeholder-shown){
+    border: 2px solid rgba(118, 0, 0, 0.205);
+    color: rgb(99, 0, 0);
+}
+.sign-up-form > .form > form span{
+    height: 0;
+    overflow: hidden;
+    font-size: 13px;
+    color: rgb(99, 0, 0);
+    display: block;
+    font-weight: 500;
+    transition: 0.3s;
+}
+.sign-up-form > .form > form > input:invalid:not(:focus):not(:placeholder-shown) + span{
+    height: 17px;
+}
+.sign-up-form > .form > form > input:valid:not(:focus):not(:placeholder-shown){
+    background-color: #f6fff4;
+    color: rgb(0, 109, 0);
 }
 .sign-up-form > .form > form > button:hover{
     background-color: #60825d;
