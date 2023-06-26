@@ -17,16 +17,16 @@
                     <h2 id="form-title">JOIN THE MOVEMENT</h2>
                     <p id="form-description">Please enter your details.</p>
                     <label for="first-name" >First name</label>
-                    <input type="text" name="first-name" id="first-name" placeholder="Enter your first name" pattern="[a-zA-Z]*" required autofocus>
-                    <span class="invalid-guide">Must only contain alphabet letters</span>
+                    <input type="text" name="first-name" id="first-name" placeholder="Enter your first name" pattern="[a-zA-Z]{2,}" required autofocus title="Alphabet letters only, at least 2 characters">
+                    <span class="invalid-guide">Alphabet letters only, at least 2 characters</span>
                     <label for="last-name">Last name</label>
-                    <input type="text" name="last-name" id="last-name" placeholder="Enter your last name" pattern="[a-zA-Z]*" required>
-                    <span class="invalid-guide">Must only contain alphabet letters</span>
+                    <input type="text" name="last-name" id="last-name" placeholder="Enter your last name" pattern="[a-zA-Z]{2,}" required title="Alphabet letters only, at least 2 characters">
+                    <span class="invalid-guide">Alphabet letters only, at least 2 characters</span>
                     <label for="email">Email</label>
-                    <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                    <input type="email" name="email" id="email" placeholder="Enter your email" required title="Enter a valid email address">
                     <span class="invalid-guide">Invalid email address</span>
                     <label for="phone-number">Phone number</label>
-                    <input type="tel" name="phone-number" id="phone-number" placeholder="Enter your phone number">
+                    <input type="tel" name="phone-number" id="phone-number" placeholder="Enter your phone number" title="Enter a valid phone number">
                     <label for="password">Password</label>
                     <input type="password" name="password" id="password" placeholder="Enter your password" required>
                     <label for="password">Confirm password</label>
