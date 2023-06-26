@@ -20,7 +20,7 @@ main >*{
     overflow: hidden;
 }
 .side-image img{
-    max-height: 100%;
+    height: 100%;
 }
 .sign-up-form{
     display: flex;
