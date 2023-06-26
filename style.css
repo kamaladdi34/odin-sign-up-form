@@ -100,6 +100,7 @@ main >*{
     border: 2px solid rgba(118, 0, 0, 0.205);
     color: rgb(99, 0, 0);
 }
+
 .sign-up-form > .form > form span{
     height: 0;
     overflow: hidden;
@@ -110,6 +111,16 @@ main >*{
     transition: 0.3s;
 }
 .sign-up-form > .form > form > input:invalid:not(:focus):not(:placeholder-shown) + span{
+    height: 17px;
+}
+.sign-up-form > .form > form > input#confirm-password:invalid:focus:not(:placeholder-shown){
+    border: 2px solid rgba(118, 0, 0, 0.205);
+    color: rgb(99, 0, 0);
+}
+.sign-up-form > .form > form > input#confirm-password:invalid:focus:not(:placeholder-shown):focus{
+    outline: 0px;
+}
+.sign-up-form > .form > form > input#confirm-password:invalid:focus:not(:placeholder-shown) + span{
     height: 17px;
 }
 .sign-up-form > .form > form > input:valid:not(:focus):not(:placeholder-shown){

@@ -1,11 +1,13 @@
 const passwordInput = document.querySelector('#password');
 const confirmPasswordInput = document.querySelector('#confirm-password');
-confirmPasswordInput.addEventListener('input',(e) => {
-    if(e.target.value == passwordInput.value){
+confirmPasswordInput.addEventListener('input',validatePasswords);
+passwordInput.addEventListener('input',validatePasswords);
+function validatePasswords(){
+    if(confirmPasswordInput.value == passwordInput.value){
         console.log('matching');
         confirmPasswordInput.setCustomValidity("");
     } else{
         console.log('not matching');        
-        confirmPasswordInput.setCustomValidity("Input cannot be empty.");
+        confirmPasswordInput.setCustomValidity("Passwords don't match");
     }
-});
+}
