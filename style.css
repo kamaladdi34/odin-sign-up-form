@@ -133,3 +133,8 @@ main >*{
 .sign-up-form > .form > form > button:hover{
     background-color: #60825d;
 }
+@media only screen and (max-width: 600px) {
+    main {
+      flex-direction: column;
+    }
+  }
